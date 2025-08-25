@@ -1,0 +1,11 @@
+
+version: '3.9'
+services:
+  server:
+    build: ./server
+    command: npm start
+    ports: [ "4000:4000" ]
+  client:
+    build: ./client
+    command: npm run preview
+    ports: [ "5173:5173" ]
